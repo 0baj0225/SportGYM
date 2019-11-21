@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>お問い合わせ</title>
+<link href="../CSS/common.css" rel="stylesheet" type="text/css">
+<link href="../CSS/contact.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico">
+<!--totop icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<!--本体-->
+<script src="../Jquery/jquery-3.4.1.min.js"></script>
+<!--１文字ずつ表示プラグイン-->
+<script src="../Jquery/jquery.inview.min.js"></script>
+<script src="../Jquery/style.js"></script>
+
+<style>
+header a {
+	color: #000;
+	transition: color .3s, text-decoration .3s;
+	font-weight:bold;
+}
+header a:hover {
+	color: #DA8E00;
+  background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+  -webkit-background-clip: text;
+}
+header .responsive-nav a {
+	color: #fff;
+}
+
+footer a {
+	color: #000;
+	transition: color .3s, text-decoration .3s;
+}
+footer a:hover {
+	color: #ccc;
+  background: -webkit-linear-gradient(-45deg,#A5A5A5, #BABAC2, #E8E8E8, #A5A5A5, #BABAC2) ;
+  -webkit-background-clip: text;
+
+}
+
+</style>
+</head>
+
+<header>
+  <p class="logo open"><a href="../index.html"><img src="../images/logo.png" width="244" height="118" alt="logo"><img src="../images/header_text.png" width="148" height="33" alt="logotext"></a></p>
+  <!--PC版の時に表示--------->
+  <nav class="pc-nav">
+    <ul>
+      <li class="shop"><a class="underline" href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a class="underline" href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a class="underline" href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a class="underline" href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a class="underline" href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a class="underline" href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a class="underline" href="../company/company.html">会社概要</a></li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+  <!--------ここまで------------------> 
+  <!--レスポンシブの時に表示-->
+  <div class="menu-trigger" href=""> <span></span> <span></span> <span></span> </div>
+  <nav class="responsive-nav">
+    <ul>
+      <li class="shop"><a href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a href="../company/company.html">会社概要</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<h1 class="movetext">CONTACT</h1>
+<h2 class="movetext">お問い合わせ</h2>
+  <div class="contact fadein">
+    <form  action="../contact/form.cgi" method="post">
+      <!-------名前------->
+      <div id="namebox">
+        <h4>お名前<span>*</span></h4>
+        <p class="name">name</p>
+        <input type="text" name="name" id="name" placeholder="田中　○○">
+        <p class="alert">入力内容をご確認ください </p>
+      </div>
+      <!-------ふりがな------->
+      <div id="kanabox">
+        <h4>ふりがな</h4>
+        <p>only for a Japanese customer</p>
+        <input type="text" name="kana" id="kana" placeholder="たなか　○○">
+      </div>
+      <!------メールアドレス------->
+      <div id="emailbox1">
+        <h4>メールアドレス<span>*</span></h4>
+        <p class="email">e-mail address</p>
+        <input type="text" name="email" id="email1" placeholder="xxxxxx@gmail.com">
+        <p class="alert">半角英数字でご記入ください </p>
+      </div>
+      <!------メールアドレス2------->
+      <div id="emailbox2">
+        <h4>メールアドレス確認用<span>*</span></h4>
+        <p class="email">email address (confirmation)</p>
+        <input  type="text" name="email" id="email2" placeholder="xxxxxx@gmail.com">
+      </div>
+      <!---------電話番号--------->
+      <div id="telbox">
+        <p class="alert">半角英数字でご記入ください </p>
+        <h4>電話番号<span>*</span></h4>
+        <p class="telbox">phone number</p>
+        <input  type="text" name="tel" id="tel" placeholder="090-xxxx-yyyy">
+        <p class="alert">半角英数字でご記入ください </p>
+      </div>
+      <!------メッセージ----------->
+      <div id="messagebox">
+        <h4>ご用件<span>*</span></h4>
+        <p class="messagebox" >Message</p>
+        <textarea name="text" class="message" id="message" placeholder=""></textarea>
+        <p class="alert">お問い合わせ内容をご記入ください</p>
+      </div>
+      <p class="submit">
+        <input name="sousin" type="button"value="送信">
+      </p>
+    </form>
+  </div>
+  <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+</main>
+<footer>
+  <nav>
+    <ul>
+      <li class="shop"><a href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a href="../company/company.html">会社概要</a></li>
+      <li class="company"></li>
+    </ul>
+  </nav>
+  <div class="footer_logo">
+    <p><img src="../images/logo.png" width="244" height="118" alt="lofgo"> </p>
+    <p>Copyright(c) SGB All rights reserved.</p>
+  </div>
+</footer>
+</body></html>

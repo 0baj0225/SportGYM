@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+main .contact {
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	width:600px;
+	border: 1px solid #000;
+	background-color:#FFF;
+	padding:18px;
+}
+
+#namebox{
+	margin-left:100px;
+}
+#kanabox{
+	margin-left:100px;
+}
+#emailbox1{
+	margin-left:100px;
+}
+#emailbox2{
+	margin-left:100px;
+}
+#telbox{
+	margin-left:100px;
+}
+#messagebox{
+	margin-left:100px;
+}
+
+.submit{
+	text-align:center;
+}
+form span {
+	color: #F00;
+}
+input[type="text"]{
+	width:350px;
+	height:35px;
+	background-color:#f2f2f2;
+}
+textarea{
+	background-color:#f2f2f2;
+	width:350px;
+	height:150px;
+	box-sizing:border-box;
+	resize:none;
+}
+input[type="submit"]{
+	background-color: transparent;
+
+	height: 54px;
+	width: 271px;
+    cursor: pointer;
+	outline:none;
+}
+
+.alert {
+	font-size: 14px;
+	color: #E74E9F;
+}
+/* 画面内に入った状態 */
+.fadein {
+    opacity : 0;
+    transform : translate(0, 0px);
+    transition : all 1500ms;
+	z-index:10;
+    }
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+main h1{ text-align:center;
+	font-size: 71.25px;
+	margin: 100px 0;
+	font-weight: lighter;
+}
+
+@media screen and (max-width:640px) {
+	h4{
+		max-width:100%;
+	}
+	img{text-align:center;
+		max-width:100%;
+	}
+	.fadein{
+    opacity: 1;
+	z-index:10;
+}
+main .contact{
+	    margin-left: 40px;
+    max-width: 80%;
+	padding:1px;
+}
+input[type="text"] {
+    max-width: 90%;
+	width:300px;
+}
+textarea{
+	max-width: 90%;
+	width:300px;
+}
+#namebox{
+	margin-left:15px;
+}
+
+#kanabox{
+	margin-left:15px;
+}
+#emailbox1{
+	margin-left:15px;
+}
+#emailbox2{
+	margin-left:15px;
+}
+#telbox{
+	margin-left:15px;
+}
+#messagebox{
+	margin-left:15px;
+}
+.submit {
+    text-align: center;
+    padding: 15px 0;
+	
+}

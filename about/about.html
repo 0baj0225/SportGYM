@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>当社について</title>
+<link href="../CSS/common.css" rel="stylesheet" type="text/css">
+<link href="../CSS/about.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico">
+<!--totop icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<!--本体-->
+<script src="../Jquery/jquery-3.4.1.min.js"></script>
+
+<!--１文字ずつ表示プラグイン-->
+<script src="../Jquery/jquery.inview.min.js">
+</script>
+<script src="../Jquery/style.js"></script>
+<style>
+header a {
+	color: #000;
+	transition: color .3s, text-decoration .3s;
+	font-weight: bold;
+}
+header a:hover {
+	color: #DA8E00;
+	background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+	-webkit-background-clip: text;
+}
+header .responsive-nav a {
+	color: #fff;
+}
+footer a {
+	color: #000;
+	transition: color .3s, text-decoration .3s;
+}
+footer a:hover {
+	color: #ccc;
+	background: -webkit-linear-gradient(-45deg, #A5A5A5, #BABAC2, #E8E8E8, #A5A5A5, #BABAC2);
+	-webkit-background-clip: text;
+}
+</style>
+</head>
+<body>
+<header>
+  <p class="logo open"><a href="../index.html"><img src="../images/logo.png" width="244" height="118" alt="logo"><img src="../images/header_text.png" width="148" height="33" alt="logotext"></a></p>
+  <!--PC版の時に表示--------->
+  <nav class="pc-nav">
+    <ul>
+      <li class="shop"><a class="underline" href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a class="underline" href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a class="underline" href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a class="underline" href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a class="underline" href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a class="underline" href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a class="underline" href="../company/company.html">会社概要</a></li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+  <!--------ここまで------------------> 
+  <!--レスポンシブの時に表示-->
+  <div class="menu-trigger" href=""> <span></span> <span></span> <span></span> </div>
+  <nav class="responsive-nav">
+    <ul>
+      <li class="shop"><a href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a href="../company/company.html">会社概要</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1 class="movetext">A B O U T U S</h1>
+  <div class="inner fadein">
+    <div class="left">
+      <h3>階級制度を導入したスポーツジム</h3>
+      <h4>SGBでは、これまでフィットネス業界になかった階級制を導入した全く新しいスポーツジムです。なぜスポーツジムに階級制を導入したのか。<br>
+        その前に、スポーツジム業界の退会理由として最も多いのはなにかを説明します。</h4>
+    </div>
+  </div>
+  <h2>行く時間がない、目的意識の低下</h2>
+  <div class="porpose">
+    <div class="porpose_l">
+      <p>■スポーツジム業界の退会理由について</p>
+      <h4>あるデータによると、時間が合わなくなった・なくなった37％、行くのが面倒になってしまった28％が高い値を示しております。</h4>
+      <h4>「時間が合わない」に関しては、環境の変化によって生じるためやむを得ない理由ではありますが、「行くのが面倒」については個人の内面的な問題であると伺えます。<br>
+        誰でも通い始めは意欲を持ち、高いモチベーションを維持しておりますが、それがなぜ「行くのが面倒」という結果になるのでしょうか。<br>
+        原因としては、<span>当初掲げた目的意識の喪失</span>によりジム通いの優先度が低下したことだと考えます。結果、ジムに通う頻度もやる気も減っていくことで退会という結果を招いたと考えます。<br>
+        では、どうすれば当初掲げた目的を失わずジム通いを続けられるか。自ら進んで行きたくなるスポーツジムはどういった仕組みか。我々は独自の視点である仕組みを導入しました。</h4>
+    </div>
+    <div class="porpose_r">
+      <p><img src="../images/toukei.png"></p>
+      <p>■アンケート対象︓東京都、神奈川県、埼玉県、千葉県在住
+        20〜60代以上までの男女3401人
+        (男性︓806人／女性︓2595人）</p>
+    </div>
+  </div>
+  <h2>自己効力を高めるための階級制度</h2>
+  <h4 class="text-center">目的意識の向上(モチベーション)を常に高い水準で維持する必要があると判断しております。誰しもジムに通い始めた当初は高い意欲を持っております。その高い意欲、いわゆる心理的部分に着目し、自己効力感を高めるのが一番効果的だと考えております。これを高めることで、自信が付きさらなる向上に繋がります。なかでも最も効果的なのが<span>「小さな成功体験を重ねること」</span>であり、階級制を設けることで自己効力感が維持あるいは高まりが続き、当初の目的を失わず目標とする身体を手に入れれます。</h4>
+  <p class="note">※自己効力感…自分が課題を克服できるという期待や自信</p>
+  </div>
+  <h2>3つの階級</h2>
+  <div class="inner">
+    <div class="text fadein">
+      <h4>当社独自の基準を設け、３段階の等級（階級）を用意しております。基準クリアと 同時にルームが変わる制度です。<br>
+        また、等級が上がれば利用施設・設備が広がり、さらなる筋力向上を
+        目指せます。もちろん年齢などは関係なく、頑張れば頑張った分だけ評価されます<br>
+        SGBではあなたの可能性を最大限引き出す制度を用意しています。</h4>
+    </div>
+    <div class="bwWrapper">
+      <p> <img src="../images/about_piramid.png" width="393" height="383"></p>
+    </div>
+  </div>
+  <!--ブロンズ-->
+  <div id="class">
+    <div class="class fadein">
+      <p><img src="../images/bronze_top.png" width="960" height="51" alt="bronze"></p>
+      <p>初めてご利用される方はブロンズからスタートして頂きます。ここでは、各設備の利用方法から<br>
+        個人の現在の食事内容を中心にライフスタイルを確認して、プログラムを作成いたします。<br>
+        また、必要な栄養素についての簡単な講義を行い、トレーニングの基礎知識を学んでいただきます。</p>
+    </div>
+    <!--矢印-->
+    <p class="fadein"><img src="../images/sign.png" width="39" height="34" alt="sign"></p>
+    <!--シルバー-->
+    <div class="class fadein">
+      <p><img src="../images/silver_top.png" width="960" height="52" alt="silver"></p>
+      <p>中級者としてさらなる筋力向上を目指すべく、マンツーマンでの徹底したトレーニングを行います。<br>
+        また、当社内でのボディビル大会に出場して頂きます。（希望者のみ）</p>
+    </div>
+    <!--矢印-->
+    <p class="fadein"><img src="../images/sign.png" width="39" height="34" alt="sign"></p>
+    <!--ゴールド-->
+    <div class="class fadein">
+      <p><img src="../images/gold_top.png" width="960" height="52" alt="gold"></p>
+      <p>SGBのゴールドに到達した方は、当社オリジナル設備をご利用いただけます。<br>
+        JBBF公認指導員の無料講習、筆記試験受験料当社負担などのサービスを受けられます。さらには、<br>
+        IFBB(国際ボディビルダーズ連盟)が発行しているプロライセンス取得も当社でバックアップさせ<br>
+        て頂きます。</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="left">
+      <h2>基準クリアについて</h2>
+      <h4 class="fadein">「BIG３」を評価基準。
+        自分自身の体重をベースに、<br>
+        ３種目の
+        基準重量を挙げられた方がクリアとなります。<br>
+        ※BIG３…ベンチプレス・スクワット、デッドリフトを指します。</h4>
+    </div>
+    <div class="right fadein">
+      <p><img src="../images/about1.png" width="325" height="310" alt="about1"></p>
+    </div>
+  </div>
+  <p class="list fadein"><img src="../images/about2.png" width="945" height="218" alt="about2"></p>
+  <p class="list_text fadein">
+    〈ブロンズ 〉
+    （例）体重60kgの場合…ベンチプレス：72kg,スクワット：96kg,デッドリフト：120kg<br>〈シルバー〉
+    （例）体重60kgの場合…ベンチプレス：80kg,スクワット：120kg,デッドリフト：150kg</p>
+  <h2>種目について</h2>
+  <div class="inner">
+    <div class="photo"> <img src="../images/photo1.png" width="268" height="268" alt="photo">
+      <div class="mask">
+        <div class="caption">ベンチに横たわった状態で、肩幅より多少広い手幅でバーベルのバーを握り、バーベルを胸の上に下ろす。<br>
+          そして、大胸筋を意識しながら両腕でバーベルを上に押し上げる。</div>
+      </div>
+      <p>ベンチプレス</p>
+    </div>
+    <div class="photo"> <img src="../images/photo2.png" width="277" height="275" alt="">
+      <div class="mask">
+        <div class="caption">両手の膝が９０度になる手幅でバーを持ち、直立して肩幅程度に足を開く。<br>
+          息を吸いながら膝を曲げて腰を落とす。上体は自然なアーチを保ち、背中を丸めないようにする。<br>
+          息を吐きながら元の姿勢に戻る。</div>
+      </div>
+      <p>スクワッド</p>
+    </div>
+    <div class="photo"> <img src="../images/photo3.png" width="271" height="271" alt="photo">
+      <div class="mask">
+        <div class="caption">足を肩幅と腰幅の中間ぐらいに開き、床に置いたバーベルを肩幅より少し広く握る。膝を曲げ、背筋を伸ばし、正面を見る。腰を前方に突き出すようなイメージで上体を起こしていく。上体を床と垂直になるまで起こしたら、膝関節と股関節を曲げて上体を前傾させ、元の姿勢に戻る。</div>
+      </div>
+      <p>デッドリフト</p>
+    </div>
+  </div>
+  <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+</main>
+<footer>
+  <nav>
+    <ul>
+      <li class="shop"><a href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a href="../company/company.html">会社概要</a></li>
+      <li class="company"></li>
+    </ul>
+  </nav>
+  <div class="footer_logo">
+    <p><img src="../images/logo.png" width="244" height="118" alt="lofgo"> </p>
+    <p>Copyright(c) SGB All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

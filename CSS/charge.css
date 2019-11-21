@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+.price1{
+	text-align:center;
+}
+.price2{margin-top:20px;
+	margin-right:255px;
+	text-align:center;
+}
+.price3{
+	margin-top:20px;
+	text-align:center;
+}
+.price4{margin-bottom:50px;
+	margin-top:20px;
+	text-align:center;
+	margin-left:255px;
+}
+.text{margin-top:30px;
+	margin-bottom:50px;
+	margin-left:100px;
+}
+.text2{width:750px;
+	margin-left:300px;
+	line-height:18px;
+	font-size:8px;
+	font-weight:bold;
+}
+main h1{ text-align:center;
+	font-size: 71.25px;
+	margin: 100px 0;
+	font-weight: lighter;
+}
+/* 画面内に入った状態 */
+.fadein {
+    opacity : 0;
+    transform : translate(0, 0px);
+    transition : all 1500ms;
+	z-index:10;
+    }
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+	
+@media screen and (max-width:640px) {
+	main h1 {
+	text-align:left;
+	font-size: 44px;
+	font-weight: bold;
+}
+.fadein img {
+	max-width: 100%;
+	    height: auto;
+
+}
+	h4{
+		max-width:100%;
+	}
+	img{text-align:center;
+		max-width:100%;
+	}
+	.fadein{
+    opacity: 1;
+	z-index:10;
+}
+.text2{
+	max-width:100%;
+	margin-left:0px;
+}
+.text{
+	margin-left:0;
+}
+.price2{
+	margin-right:0;
+}
+.price4{
+	margin-left:0;
+}
+	}

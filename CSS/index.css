@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*メイン動画*/
+.video-wrap { 
+margin-top:50px;
+  position: relative;
+  width:100%;
+} 
+video { 
+  display: block; 
+  margin: 0 0 0 auto;
+} 
+.video-wrap::before{
+background-color: rgba(0,0,0,0.5);
+	/* どの範囲に重ねるかを指定 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+.video-wrap p {
+  color: #fff; 
+  font-size: 100px; 
+  font-weight:bold;
+  position: absolute; 
+left:100px;
+top:150px;
+  z-index: 1; 
+}
+.video-wrap p span{
+	font-size:30px;
+	font-weight:bold;
+}
+main #text{
+	padding-top:50px;
+	text-align:center;
+width:532px;
+font-weight:bold;
+margin:auto;
+}
+main #text span{
+	color:#DA8E00;
+}
+ main h1{
+	font-size: 71.25px;
+	margin-top: 100px;
+	margin-left: 40px;
+	font-weight: lighter;
+}
+
+
+/*-------詳細はこちら--------*/
+.hvr-curl-bottom-left {
+	margin-top:15px;
+	left:40%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-curl-bottom-left:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: #f0eff0;
+  /* IE9 */
+  background: linear-gradient(45deg,#f0eff0 45%, #aaa 50%, #ccc 56%, white 80%);
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-bottom-left:hover:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:active:before {
+  width: 25px;
+  height: 25px;
+}
+/*-------都道府県ホーバー-------*/
+.touhoku {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.touhoku:hover, .touhoku:focus, .touhoku:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.kansai {
+  display: inline-block;
+ 
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.kansai:hover, .kansai:focus, .kansai:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.kantou {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.kantou:hover, .kantou:focus, .kantou:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/*---------------------------*/
+
+.box {
+	display: flex;
+	justify-content: center;
+	margin-bottom:150px;
+}
+.news_box {
+	margin-left:27px;
+	width: 344px;
+	height: 318px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	background: linear-gradient(#fff 67%, #f0f0f0);
+	  transition: all .1s ease 0s;
+}
+/*キャンペーン画像ホーバー*/
+.news_box:hover {
+  cursor: pointer;
+  background: #CCC;
+  opacity:0.8;
+}
+ 
+.news_box a{
+	left: 123px;
+	top: 233px;
+}
+.news_box p {
+	text-align:center;
+		color:#000;
+}
+.news_box p:nth-child(2){
+	    font-weight: bold;
+    margin: 10px 10px;
+    font-size: 15px;
+}
+.news_box .day{
+	text-align:right;
+	margin-right:5px;
+	margin-top:10px;
+	}
+
+.map {
+	text-align: center;
+}
+.touhoku {	position: relative;
+	left: 700px;
+	top: -400px;
+}
+.kantou {
+	position: relative;
+	left: 550px;
+	top: -200px;
+}
+.kansai {
+	position: relative;
+	left: 300px;
+	top: -200px;
+}
+
+.inner h3 {
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.inner h4 {
+	font-size: 18px;
+}
+.about_left {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.about_right {
+	margin-right: 50px;
+	margin-bottom:200px;
+}
+
+/*-------詳細クリック--------*/
+.hvr-curl-bottom-left {
+cursol:pointer;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-curl-bottom-left:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: #f0eff0;
+  /* IE9 */
+  background: linear-gradient(45deg,#f0eff0 45%, #aaa 50%, #ccc 56%, white 80%);
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-bottom-left:hover:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:active:before {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width:640px) {
+	
+	main{
+		margin-bottom:200px;
+	}
+video{max-width:100%;
+}
+.video-wrap p{
+margin-top: -109px;
+    margin-left: -71px;
+    font-size: 22px;
+}
+.video-wrap p span{
+	font-size:20px;
+}
+.box{
+	display:block;
+}
+.news_box{
+	margin-bottom:20px;
+}
+.touhoku{
+	margin-left:-480px;
+}
+.kansai{margin-left:20px;
+}
+main h1{margin-top:300px;
+margin-left:1px;
+}
+.about_left {
+        margin-left: 0;
+}
+.about_right{
+	margin-right:0;
+	margin-bottom:0;
+}
+main h2{
+	font-size:15px;
+}
+.service_img{
+	margin-bottom:100px;
+}
+footer{
+	margin-top:100px;
+}
+.news_box {
+	
+	margin-left:13px;	
+}

@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+main h1{ text-align:center;
+	font-size: 71.25px;
+	margin: 100px 0;
+	font-weight: lighter;
+}
+main .company{	background-color: #fff;
+padding:5px;
+	box-shadow:0 0 5px 5px rgba(51,51,51,.2);
+	width:700px;
+	height:550px;
+	margin:auto;
+		font-weight:bold;
+		margin-bottom:30px;
+}
+
+main .company dt{
+	float:left;
+	clear:left;
+ width: 160px;
+    padding: 20px;
+	padding-left:20px;
+	margin-right:15px;
+	border-right:1px solid #000;
+}
+
+main .company dd{padding:20px;
+border-bottom:1px solid #000;
+width:674px;
+}
+main .text{
+	margin-top:-5px;
+	line-height:15px;
+}
+main .company dd:nth-child(16){
+	border-bottom:none;
+}
+
+
+@media screen and (max-width:640px) {
+	main h1 {
+	text-align:left;
+	font-size: 44px;
+	font-weight: bold;
+}
+	h4{
+		max-width:100%;
+	}
+	img{text-align:center;
+		max-width:100%;
+	}
+	.fadein{
+    opacity: 1;
+	z-index:10;
+}
+main .company{
+	max-width:88%;
+	height:430px;
+}
+main .company dt{
+	font-size:12px;
+	width:78px;
+	padding:0;
+	padding-left: 4px;
+    margin-left: 9px;
+}
+
+main .company dd{
+	font-size:12px;
+	width:300px;
+	padding:0;
+}
+main .company dl{
+	line-height:50px;
+}
+main .company dd:nth-child(16){
+	padding:5px 0;
+}
+
+}

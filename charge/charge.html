@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>料金</title>
+<link href="../CSS/common.css" rel="stylesheet" type="text/css">
+<link href="../CSS/charge.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../images/favicon.ico">
+<!--totop icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<!--本体-->
+<script src="../Jquery/jquery-3.4.1.min.js"></script>
+<!--１文字ずつ表示プラグイン-->
+<script src="../Jquery/jquery.inview.min.js"></script>
+<script src="../Jquery/style.js"></script>
+
+<style>
+header a {
+	color: #000;
+	transition: color .3s, text-decoration .3s;
+	font-weight:bold;
+}
+header a:hover {
+	color: #DA8E00;
+  background: -webkit-linear-gradient(-45deg, #F7DE05, #DA8E00, #EDAC06, #F7DE05, #ECB802, #DAAF08, #B67B03, #DA8E00, #EDAC06, #F7DE05, #ECB802, #EDAC06);
+  -webkit-background-clip: text;
+}
+header .responsive-nav a {
+	color: #fff;
+}
+
+footer a {
+	color: #000;
+	transition: color .3s, text-decoration .3s;
+}
+footer a:hover {
+	color: #ccc;
+  background: -webkit-linear-gradient(-45deg,#A5A5A5, #BABAC2, #E8E8E8, #A5A5A5, #BABAC2) ;
+  -webkit-background-clip: text;
+
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+  <p class="logo open"><a href="../index.html"><img src="../images/logo.png" width="244" height="118" alt="logo"><img src="../images/header_text.png" width="148" height="33" alt="logotext"></a></p>
+  <!--PC版の時に表示--------->
+  <nav class="pc-nav">
+    <ul>
+      <li class="shop"><a class="underline" href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a class="underline" href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a class="underline" href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a class="underline" href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a class="underline" href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a class="underline" href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a class="underline" href="../company/company.html">会社概要</a></li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+  <!--------ここまで------------------> 
+  <!--レスポンシブの時に表示-->
+  <div class="menu-trigger" href=""> <span></span> <span></span> <span></span> </div>
+  <nav class="responsive-nav">
+    <ul>
+      <li class="shop"><a href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a href="../company/company.html">会社概要</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<h1 class="movetext">P R I C E</h1>
+<h2>料 金</h2>
+<p class="text fadein">SGBでは月額固定の使い放題の料金システムを採用しています。</p>
+<p class="price1 fadein"><img src="../images/price1.png" width="662" height="272" alt="price1"></p>
+<p class="text2 fadein">現金またはクレジットカードでのお支払いも可能です。公的身分証明書は以下のいずれか1点をお持ちください。<br>（運転免許証 健康保険証 パスポート 年金手帳 住民基本台帳 外国人登録証明書）<br>
+  ・公的身分証明書が現住所でない場合、公共料金の受領書が必要となります。<br>
+  ・日本国籍を所有しない方は、パスポートをご提示下さい。</p>
+  <p class="text fadein">各階層料金については以下の通りです。</p>
+<p class="price2 fadein"><img src="../images/price2.png" width="496" height="113" alt="price2"></p>
+<p class="price3 fadein"><img src="../images/price3.png" width="497" height="115" alt="price3"></p>
+<p class="price4 fadein"><img src="../images/price4.png" width="497" height="114" alt="price4"></p>
+
+ <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+</main>
+<footer>
+  <nav>
+    <ul>
+      <li class="shop"><a href="../shop/shop.html">店舗一覧</a></li>
+      <li class="about"><a href="../about/about.html">SGBの特徴</a></li>
+      <li class="charge"><a href="../charge/charge.html">料金</a></li>
+      <li class="staff"><a href="../staff/staff.html">スタッフ紹介</a></li>
+      <li class="free_tour"><a href="../free_tour/free_tour.html">入会・見学案内</a></li>
+      <li class="contact"><a href="../contact/contact.html">お問い合わせ</a></li>
+      <li class="company"><a href="../company/company.html">会社概要</a></li>
+      <li class="company"></li>
+    </ul>
+  </nav>
+  <div class="footer_logo">
+    <p><img src="../images/logo.png" width="244" height="118" alt="lofgo"> </p>
+    <p>Copyright(c) SGB All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

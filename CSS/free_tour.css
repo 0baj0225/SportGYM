@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.tour_text{
+	margin-left:100px;
+}
+
+.step{
+margin-top:20px;
+position:relative;
+}
+.sign{
+	margin:50px;
+}
+.text1{
+	text-align: left;
+	position: absolute;
+	left: 571px;
+	top: 106px;
+	width: 320px;
+}
+.text2{
+	text-align: left;
+	position: absolute;
+	left: 572px;
+	top: 515px;
+	width: 365px;
+}
+.text3{
+	text-align: left;
+	position: absolute;
+	left: 580px;
+	top: 887px;
+	width: 363px;
+}
+.wrap{margin-top:50px;
+	text-align:center;
+}
+
+main h3{
+	font-size:24px;
+}
+
+
+/* 画面内に入った状態 */
+.fadein {
+	    opacity : 0;
+    transform : translate(0, 0px);
+    transition : all 1500ms;
+	z-index:10;
+    }
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+main h1{ text-align:center;
+	font-size: 71.25px;
+	margin: 100px 0;
+	font-weight: lighter;
+}
+
+/*-------詳細クリック--------*/
+.hvr-curl-bottom-left {
+	margin-top:55px;
+	margin-bottom:100px;
+	width:295px;
+	left:40%;	
+cursol:pointer;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-curl-bottom-left:before {
+	text-align:center;
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: #f0eff0;
+  /* IE9 */
+  background: linear-gradient(45deg,#f0eff0 45%, #aaa 50%, #ccc 56%, white 80%);
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-bottom-left:hover:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:active:before {
+  width: 25px;
+  height: 25px;
+}
+
+
+@media screen and (max-width:640px) {
+	main h1 {
+	text-align:left;
+	font-size: 44px;
+	font-weight: bold;
+}
+	h4{
+		max-width:100%;
+	}
+	img{text-align:center;
+		max-width:100%;
+	}
+	.fadein{
+    opacity: 1;
+	z-index:10;
+}
+.text1 {
+     left: 165px;
+	 line-height:1;
+    top: 55px;
+	width:180px;
+	font-size:10px;
+}
+.text2 {
+   left: 165px;
+	 line-height:1;
+   top: 320px;
+	width:180px;
+	font-size:10px;
+}
+.text3 {
+     left: 165px;
+	 line-height:1;
+        top: 600px;
+	width:180px;
+	font-size:10px;
+}
+.hvr-curl-bottom-left{
+	left:0;
+}
+.tour_text {
+    margin-left: 0;
+}
+.step img{max-width:100%;
+height:auto;
+}
+
+}
+
